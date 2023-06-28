@@ -1,5 +1,5 @@
 resource "aws_security_group" "ec2_amazonlinux_sg" {
-  name        = "security_group3"
+  name        = var.sg_name
   description = "Allow SSH and HTTP inbound traffic"
   vpc_id      = "vpc-012facdb2513717e2"
 
