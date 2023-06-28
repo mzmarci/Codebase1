@@ -7,8 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "workspacebucket-2023"
-    key    = "Dev/terraform.tfstate"
+    //bucket = "workspacebucket-2023"
+    bucket = var.bucket
+   // key    = "Dev/terraform.tfstate"
+    key    = var.key
     region = "eu-west-1"
   }
 

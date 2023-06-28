@@ -21,3 +21,7 @@ variable "ec2_default_tags" {
     "Name" = "Marci"
   }
 }
+
+  variable "bucket" {}
+  variable "key" {}
+    
